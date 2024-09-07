@@ -1,0 +1,39 @@
+name: Testing with TestCafe
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: npm install
+
+    # Start the React app in the background
+    - name: Start React app
+      run: npm run dev
+      env:
+        CI: true
+
+    # Run TestCafe tests
+    - name: Run TestCafe tests
+      run: npx testcafe chrome:headless /src/tests/
