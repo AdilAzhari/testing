@@ -33,4 +33,4 @@ jobs:
 
     # Run TestCafe tests
     - name: Run TestCafe tests
-      run: npx testcafe chrome src/tests/
+      run: npx testcafe chrome src/tests/ --hostname localhost --retry-test-pages
