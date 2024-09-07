@@ -18,5 +18,7 @@ jobs:
       - run: npm install
       - name: Start React app
         run: |
-          npm run dev &
+          npm run dev &> react_app.log &
+          sleep 10
+          cat react_app.log
           npx wait-on http://localhost:5173
