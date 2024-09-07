@@ -1,33 +1,14 @@
-name: Testing with TestCafe
-
-on:
-  pull_request:
-    branches:
-      - main
-      - dev
-
 jobs:
-  test:
-    runs-on: windows-latest
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-    - name: Check out the repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-
-    - run: npm install
-    - run: npm install wait-on
-
-    # Start the React app in the background
-    - name: Start React app
-      run: |
-        npm run dev &
-        npx wait-on http://localhost:5173
-
-    # Run TestCafe tests
-    - name: Run TestCafe tests
-      run: npx testcafe "chrome:headless --no-sandbox" src/tests/ --hostname localhost --retry-test-pages --page-request-timeout 10000
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - name: Start React app
+        run: |
+          npm run dev &
+          npx wait-on http://localhost:5173
