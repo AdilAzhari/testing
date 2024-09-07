@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: windows-11
 
     strategy:
       matrix:
@@ -27,6 +27,10 @@ jobs:
     # Start the React app in the background
     - name: Start React app
       run: npm run dev &
+
+    # Wait for the React app to start
+    - name: Wait for React app
+      run: sleep 15
 
     # Run TestCafe tests
     - name: Run TestCafe tests
