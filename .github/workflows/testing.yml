@@ -23,10 +23,10 @@ jobs:
 
     # Start the React app in the background
     - name: Start React app
-      run: npm run dev &
-
-    - name: Check server status
-      run: curl -I http://localhost:5173
+      run: |
+        npm run dev &
+        sleep 10
+        curl -I http://localhost:5173
 
     # Run TestCafe tests
     - name: Run TestCafe tests
