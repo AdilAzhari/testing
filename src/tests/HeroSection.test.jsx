@@ -7,5 +7,5 @@ test('Check if the component exists', async t => {
     const component = Selector('.hero-section'); 
     
     await t
-        .expect(component.exists).ok(); 
+        .expect(component.exists).ok()
 });
