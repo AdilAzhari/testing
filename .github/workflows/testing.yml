@@ -23,4 +23,4 @@ jobs:
           
 
       - name: Run TestCafe tests
-        run: npx testcafe "chrome:headless --no-sandbox" src/tests/ --hostname localhost --retry-test-pages --page-request-timeout 10000
+        run: npx testcafe chrome:headless src/tests/ --no-sandbox --disable-setuid-sandbox

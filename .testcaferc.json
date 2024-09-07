@@ -1,5 +1,0 @@
-{
-    "pageRequestTimeout": 10000,
-    "retryTestPages": true,
-    "hostname": "localhost"
-  }
