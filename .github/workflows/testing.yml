@@ -10,17 +10,14 @@ jobs:
   test:
     runs-on: windows-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-    - uses: actions/checkout@v3
+    - name: Check out the repository
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '14
 
     - run: npm install
 
@@ -28,9 +25,9 @@ jobs:
     - name: Start React app
       run: npm run dev &
 
-    - name: Wait for server to start
-      run: sleep 10
+    - name: Check server status
+      run: curl -I http://localhost:5173
 
     # Run TestCafe tests
     - name: Run TestCafe tests
-      run: npx testcafe chrome:headless src/tests/ --hostname localhost --retry-test-pages
+      run: npx testcafe "chrome:headless --no-sandbox" src/tests/ --hostname localhost --retry-test-pages --page-request-timeout 10000
