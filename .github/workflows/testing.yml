@@ -30,4 +30,4 @@ jobs:
 
     # Run TestCafe tests
     - name: Run TestCafe tests
-      run: npx testcafe chrome:headless /src/tests/
+      run: npx testcafe chrome:headless src/tests/
