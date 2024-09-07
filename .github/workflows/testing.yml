@@ -22,3 +22,6 @@ jobs:
           sleep 10
           cat react_app.log
           npx wait-on http://localhost:5173
+
+      - name: Run TestCafe tests
+        run: npx testcafe "chrome:headless --no-sandbox" src/tests/ --hostname localhost --retry-test-pages --page-request-timeout 10000
