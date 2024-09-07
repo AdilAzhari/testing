@@ -28,10 +28,6 @@ jobs:
     - name: Start React app
       run: npm run dev &
 
-    # Wait for the React app to start
-    - name: Wait for React app
-      run: sleep 15
-
     # Run TestCafe tests
     - name: Run TestCafe tests
-      run: npx testcafe chrome:headless src/tests/
+      run: npx testcafe chrome src/tests/
