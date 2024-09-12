@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className='hero-section'>HeroSection</div>
+    <div data-testid='herosection1' className='hero-section'>HeroSection</div>
   )
 }
 
