@@ -3,8 +3,8 @@ import HeroSection from '../components/HeroSection/HeroSection'
 
 const HomePage = () => {
   return (
-    <div>
-      HomePage
+    <div  data-testid='hompage'>
+      
       <HeroSection />
     </div>
   )
