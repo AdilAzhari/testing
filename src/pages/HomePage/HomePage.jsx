@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection/HeroSection'
+import HeroSection from '../../components/HeroSection/HeroSection'
 
 const HomePage = () => {
   return (
-    <div>
-
+    <div  data-testid='hompage'>
+      
       <HeroSection />
     </div>
   )
