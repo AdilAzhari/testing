@@ -5,25 +5,32 @@
     padding: 20px;
 }
 
-.hero-section > div {
+.hero-section .content-container, .image-container {
     flex: 1;
 }
 
 .content-container > h1 > span {
     color: #ff6600;
+    color: linear-gradient(121.76deg, #FFDE59 15.41%, #FF1616 81.48%);
 }
 
 .content-container h1 {
   font-size: 48px;
-  font-weight: normal;
+  font-weight: 400;
   color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .content-container p {
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 16px;
+  font-weight: 300;
   color: #FFFFFF;
   margin: 20px 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .content-container > form {
@@ -53,9 +60,44 @@
     display: none;
 }
 
+.statistics {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.statistics figure {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 14px;
+}
+
+.statistics figure img{
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.statistics figcaption h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.statistics figcaption p {
+    margin: 0;
+    font-size: small;
+}
+
+
 @media (min-width: 768px) {
     .hero-section {
         padding: 20px 80px;
+        height: 100svh;
+    }
+
+    .content-container > form {
+        width: 80%;
     }
 
     .image-container {
