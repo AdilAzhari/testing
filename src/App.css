@@ -1,10 +1,13 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
-  background: rgb(74,7,23);
-  background: linear-gradient(45deg, rgba(74,7,23,1) 0%, rgba(74,7,23,1) 25%, rgba(2,0,36,1) 100%);
+  background: rgb(74, 7, 23);
+  background: linear-gradient(
+    45deg,
+    rgba(74, 7, 23, 1) 0%,
+    rgba(74, 7, 23, 1) 25%,
+    rgba(2, 0, 36, 1) 100%
+  );
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
