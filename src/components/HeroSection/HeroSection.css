@@ -53,7 +53,6 @@
   padding: 10px 20px;
   font-size: 16px;
   border: 1px solid #ff6600;
-  /* transform: skew(-20deg); */
   background: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
   cursor: pointer;
 }
@@ -95,6 +94,7 @@
 @media (min-width: 768px) {
   .hero-section {
     padding: 20px 80px;
+    /* stylelint-disable-next-line unit-no-unknown */
     height: 100svh;
   }
 
