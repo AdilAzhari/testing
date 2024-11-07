@@ -12,14 +12,14 @@
 }
 
 .content-container > h1 > span {
-  color: #ff6600;
+  color: #f60;
   color: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
 }
 
 .content-container h1 {
   font-size: 48px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -28,7 +28,7 @@
 .content-container p {
   font-size: 16px;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   margin: 20px 0;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -43,16 +43,16 @@
   width: 100%;
   padding: 10px 20px;
   background: none;
-  color: #ffffff;
+  color: #fff;
   outline: none;
-  border: 1px solid #ff6600;
+  border: 1px solid #f60;
 }
 
 .content-container > form > button {
-  color: #ffffff;
+  color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-  border: 1px solid #ff6600;
+  border: 1px solid #f60;
   background: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
   cursor: pointer;
 }
@@ -72,7 +72,7 @@
 .statistics figure {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   gap: 14px;
 }
 
