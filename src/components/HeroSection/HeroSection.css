@@ -49,12 +49,26 @@
 }
 
 .content-container > form > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
+  height: 43px;
   border: 1px solid #f60;
-  background: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  background: linear-gradient(
+    121.76deg,
+    hsl(48, 100%, 67%) 15.41%,
+    hsl(0, 100%, 54%) 81.48%
+  );
   cursor: pointer;
+}
+
+.content-container > form > button > img {
+  height: inherit;
+  width: inherit;
 }
 
 .image-container {
@@ -76,6 +90,7 @@
   gap: 14px;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .statistics figure img {
   width: 50px;
   aspect-ratio: 1;
@@ -109,6 +124,10 @@
   }
 
   .image-container {
-    display: block;
+    display: inline-block;
+  }
+
+  .image-container > img {
+    width: 80%;
   }
 }

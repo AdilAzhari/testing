@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
-import "./NavBar.css";
-import logo from "../../assets/logo.webp";
 import { useState } from "react";
+import "./NavBar.css";
+
+const logo = "/src/assets/logo.webp";
+const rocketIcon = "/src/assets/rocket.svg";
 
 const Links = [
   { label: "Home", url: "/" },
@@ -45,7 +47,9 @@ const NavBar = () => {
           <Link to='' className='connect-wallet'>
             Connect Wallet
           </Link>
-          <span>+</span>
+          <span>
+            <img src={rocketIcon} alt='rocket icon' />
+          </span>
         </div>
         <button className={`nav-btn`} onClick={handleToggle}>
           ✖️

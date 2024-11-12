@@ -4,13 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  background: rgb(74, 7, 23);
-  background: linear-gradient(
-    45deg,
-    rgba(74, 7, 23, 1) 0%,
-    rgba(74, 7, 23, 1) 25%,
-    rgba(2, 0, 36, 1) 100%
-  );
+  background-image: linear-gradient(90deg, hsl(341, 21%, 18%) 0%, hsl(215, 95%, 7%) 100%);
 }
 
 .logo {
@@ -95,6 +89,8 @@
 
 .btn-group {
   display: flex;
+  align-items: center;
+  height: 43px;
 }
 
 .connect-wallet {
@@ -109,12 +105,21 @@
 }
 
 .btn-group > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
   border: 1px solid #f60;
   transform: skew(-20deg);
   background: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+}
+
+.btn-group > span > img {
+  width: 40px;
+  aspect-ratio: 1;
 }
 
 @media (min-width: 768px) {

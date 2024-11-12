@@ -5,6 +5,8 @@ import coin2 from "../../assets/coin2.png";
 import coin3 from "../../assets/coin3.png";
 import "./HeroSection.css";
 
+const roketIcon = "/src/assets/rocket.svg";
+
 const statsData = [
   { icon: coin1, number: 15, label: "Supported Chains" },
   { icon: coin2, number: 250, label: "Supported DEX" },
@@ -40,7 +42,9 @@ const HeroSection = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder='Enter your email to get started'
           />
-          <button type='submit'>+</button>
+          <button type='submit'>
+            <img src={roketIcon} alt='rocket icon' />
+          </button>
         </form>
 
         <div className='statistics'>
