@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f2742fd9;
+  font-family: "Sora", sans-serif;
+  font-weight: 700px;
+  gap: 40px;
+  padding: 50px;
+  background-image:
+    linear-gradient(to right, #f2742fd9 1px, transparent 1px),
+    linear-gradient(to bottom, #ea3f32d9 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.get-started-btn {
+  border: 1px solid white;
+  height: 70px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.get_started_image {
+  width: 50px;
+  height: 50px;
+}
+
+.Footer-section {
+  background-color: #000;
+  color: white;
+  font-family: "Sora", sans-serif;
+  font-weight: 700px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 6rem 3rem 0 3rem;
+}
+
+.footer-copy-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 2rem 3rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.logo-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.appex-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.footer-logo {
+  margin-right: 4rem;
+  text-align: start;
+}
+
+.logo-paragraph-text {
+  align-items: flex-start;
+  text-align: start;
+  margin: 1rem 0 1rem 0;
+  line-height: 37px;
+}
+
+i.fab {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  padding-top: 0.6rem;
+  font-weight: 700;
+}
+
+.footer-link {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer-link-h2 {
+  margin-bottom: 1.6rem;
+}
+
+.footer-list-style {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.footer-list-link {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+.footer-faqs,
+.footer-links,
+.footer-support {
+  text-align: start;
+}
+
+/* for mobile */
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-copy-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-icons {
+    justify-content: center;
+  }
+
+  .footer-link-h2 {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .footer-faqs,
+  .footer-links,
+  .footer-support {
+    text-align: center;
+  }
+
+  .logo-paragraph-text {
+    text-align: center;
+  }
+
+  .logo {
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+  }
+}
