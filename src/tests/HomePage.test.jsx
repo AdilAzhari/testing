@@ -3,5 +3,5 @@ import HomePage from "../pages/HomePage/HomePage";
 
 test("HomePage Exists", () => {
   const { getByTestId } = render(<HomePage />);
-  expect(getByTestId("homepage")).toBeInTheDocument();
+  expect(getByTestId("hompage")).toBeInTheDocument();
 });
