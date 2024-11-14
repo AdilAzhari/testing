@@ -7,4 +7,11 @@
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 40px;
+  }
 }

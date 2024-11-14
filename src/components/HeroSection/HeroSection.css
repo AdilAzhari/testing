@@ -1,8 +1,15 @@
+header {
+  background-image: url("../../assets/hero-vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 10px;
+}
+
 .hero-section {
   display: flex;
   align-items: center;
   text-align: left;
-  padding: 20px;
 }
 
 .hero-section .content-container,
@@ -108,7 +115,7 @@
 
 @media (min-width: 768px) {
   .hero-section {
-    padding: 20px 80px;
+    padding: 20px 40px;
     /* stylelint-disable-next-line unit-no-unknown */
     height: 100svh;
   }
@@ -125,6 +132,8 @@
 
   .image-container {
     display: inline-block;
+    display: flex;
+    justify-content: end;
   }
 
   .image-container > img {
