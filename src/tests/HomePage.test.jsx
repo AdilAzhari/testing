@@ -1,8 +1,7 @@
-import { render } from '@testing-library/react';
-import HomePage from '../pages/HomePage/HomePage';
+import { render } from "@testing-library/react";
+import HomePage from "../pages/HomePage/HomePage";
 
-test('HomePage Exists', () => {
+test("HomePage Exists", () => {
   const { getByTestId } = render(<HomePage />);
-  expect(getByTestId('hompage')).toBeInTheDocument();
+  expect(getByTestId("homepage")).toBeInTheDocument();
 });
-

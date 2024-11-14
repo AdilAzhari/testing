@@ -3,7 +3,7 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 
 const HomePage = () => {
   return (
-    <div data-testid='hompage'>
+    <div data-testid='homepage'>
       <HeroSection />
     </div>
   );
