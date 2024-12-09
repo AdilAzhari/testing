@@ -1,6 +1,17 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  background: #000;
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  background-image: linear-gradient(90deg, hsl(341, 21%, 18%) 0%, hsl(215, 95%, 7%) 100%);
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 40px;
+  }
 }

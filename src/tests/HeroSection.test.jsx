@@ -1,11 +1,11 @@
-import { Selector } from 'testcafe';
+import { render, screen } from "@testing-library/react";
+import HeroSection from "../components/HeroSection/HeroSection";
 
-fixture `Check if the HeroSection component exists`
-    .page`http://localhost:5173`
+test("Hero Section renders correct heading text", () => {
+  render(<HeroSection />);
 
-test('Check if the component exists', async t => {
-    const component = Selector('.hero-section'); 
-    
-    await t
-        .expect(component.exists).ok()
+  const headingElement = screen.getByText("Blockchain Technology");
+
+  expect(headingElement).toBeInTheDocument();
+  expect(headingElement).toHaveTextContent("Blockchain Technology");
 });

@@ -1,0 +1,145 @@
+/* stylelint-disable declaration-colon-newline-after */
+.public-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-btn {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-content {
+  position: fixed;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  right: -100%;
+  transition: all ease-in-out 300ms;
+  background: rgb(74, 7, 23);
+  background: linear-gradient(90deg, hsl(341, 21%, 18%) 0%, hsl(215, 95%, 7%) 100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 20;
+}
+
+.nav-content ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.open-menu {
+  right: 0;
+}
+
+.nav-content li {
+  cursor: pointer;
+}
+
+.nav-content ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none;
+  transition: all ease-in-out 300ms;
+}
+
+.nav-content ul li a:hover {
+  color: #e85c05;
+  color: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+  text-decoration: none;
+  border-bottom: 2px solid #fc0;
+  padding-bottom: 2px;
+}
+
+.nav-content ul li a:focus {
+  color: #e85c05;
+  color: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+  text-decoration: none;
+  border-bottom: 2px solid #fc0;
+  padding-bottom: 2px;
+}
+
+.nav-content ul li a .active {
+  color: #e85c05;
+  color: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+  border-bottom: 2px solid #fc0;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.connect-wallet {
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #f60;
+  font-size: 16px;
+  transform: skew(-20deg);
+  text-decoration: none;
+}
+
+.btn-group > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #f60;
+  transform: skew(-20deg);
+  background: linear-gradient(121.76deg, #ffde59 15.41%, #ff1616 81.48%);
+}
+
+.btn-group > span > img {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+@media (min-width: 768px) {
+  .public-nav {
+    padding: 10px 40px;
+  }
+
+  .nav-content {
+    position: static;
+    width: auto;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    z-index: 0;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-content ul {
+    flex-flow: row;
+    gap: 20px;
+  }
+}
