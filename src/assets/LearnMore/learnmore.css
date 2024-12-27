@@ -1,0 +1,32 @@
+.learn-more-section {
+  padding: 60px 20px 0 50px;
+  font-family: "Sora", sans-serif;
+}
+
+.learn-more-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.learn-more-intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.learn-more-intro-text p {
+  color: #cdcdcd;
+}
+
+.learn-more-intro-text h2 {
+  color: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+}
+
+.learn-more-intro-text-freq {
+  color: #fff;
+}
+.learn-more-intro-text-ask {
+  background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
