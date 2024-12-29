@@ -103,9 +103,9 @@
     repeating-linear-gradient(
       to bottom,
       black 0,
-      black 5 px,
+      black 5px,
       transparent 5px,
-      transparent x
+      transparent 10px
     );
   -webkit-mask:
     repeating-linear-gradient(
@@ -179,10 +179,13 @@
       transparent 19px,
       rgba(255, 255, 255, 0.2) 20px
     ),
-    repeating-linear
-    ent(to right, nsparent, transparent 19 rgba(255, 255, 2) 20px),
-    linear- nt(90deg, #ea3f32d9, #f2742fd9); /* Base gradient background */
-
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 19px,
+      rgba(255, 255, 255, 0.2) 20px
+    ),
+    linear-gradient(90deg, #ea3f32d9, #f2742fd9);
   background-blend-mode: overlay; /* Blend lines with the gradient */
   height: 80vh;
   display: flex;
