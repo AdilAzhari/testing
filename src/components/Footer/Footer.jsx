@@ -6,6 +6,8 @@ import "@fortawesome/fontawesome-free/css/all.css";
 const Footer = () => {
   return (
     <>
+      <span className="footer-first-line"></span>
+
       <div className="Footer-section">
         <div className="footer">
           <div className="footer-logo">
