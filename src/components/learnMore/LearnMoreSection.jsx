@@ -130,6 +130,7 @@ const LearnMoreSection = ({
             </div>
           ))}
         </div>
+        <div className="learn_more_line"></div>
       </div>
       {/* Learn more end container */}
       <div className="learn-more-end-container">
