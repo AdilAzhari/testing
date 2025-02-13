@@ -45,6 +45,13 @@
   padding: 6rem 3rem 0 3rem;
 }
 
+.footer-first-line {
+  background-color: #e0e0e0;
+  width: 100%;
+  border-top: 0.1px solid #6f5e5e;
+  display: flex;
+}
+
 .footer-copy-right {
   display: flex;
   justify-content: space-between;
@@ -61,10 +68,9 @@
 
 .logo-icons {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 3rem 0;
 }
 
 .appex-logo {
@@ -86,16 +92,25 @@
 
 i.fab {
   color: #fff;
-  width: 35px;
-  height: 35px;
-  padding-top: 0.6rem;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .footer-link {
+  text-decoration: none;
   text-align: center;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+.footer-link:hover {
+  text-decoration: none;
 }
 
 .footer-link-h2 {
@@ -140,6 +155,7 @@ i.fab {
 
   .logo-icons {
     justify-content: center;
+    gap: 0.8rem;
   }
 
   .footer-link-h2 {
