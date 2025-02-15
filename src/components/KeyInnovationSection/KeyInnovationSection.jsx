@@ -1,6 +1,6 @@
 import React from "react";
 import "./KeyInnovationSection.css";
-import BitcoinTechnology from "../../assets/BitcoinTechnology.png";
+import BitcoinTechnology from "../../assets/BitcoinTechnology.svg";
 import BitcoinTechnology1 from "../../assets/BitcoinTechnology1.png";
 import BitcoinTechnology2 from "../../assets/BitcoinTechnology2.png";
 import LinkButton from "./LinkButton.jsx";
