@@ -1,0 +1,157 @@
+.keyInnovation-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.keyInnovation-section > hr {
+  color: #f60;
+  width: 200px;
+  margin: 160px auto;
+}
+
+.keyInnovation-header-container {
+  text-align: center;
+  max-width: 1129px;
+}
+
+.keyInnovation-header-container h5 {
+  font-weight: 300;
+  font-size: 18px;
+  color: #cdcdcd;
+  margin-bottom: 20px;
+}
+
+.keyInnovation-header-container h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+}
+
+.keyInnovation-header-container h3 span {
+  color: #f60;
+}
+
+.keyInnovation-card-container {
+  margin-top: 80px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.keyInnovation-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.keyInnovation-card {
+  position: relative;
+  border-radius: 40px;
+  border: 1px solid #fff6;
+  overflow: hidden;
+  width: 100%;
+  height: 664px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.keyInnovation-card.half {
+  flex: 1;
+}
+
+.keyInnovation-card.full {
+  width: 100%;
+}
+
+.keyInnovation-card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.horizontalDisplay {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  min-width: 350px;
+}
+
+.keyInnovation-card-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.keyInnovation-card-description {
+  font-weight: 300;
+  font-size: 18px;
+  color: #cdcdcd;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.description {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+  .keyInnovation-row {
+    flex-direction: column;
+  }
+
+  .keyInnovation-card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .keyInnovation-card.half {
+    flex: none;
+  }
+
+  .keyInnovation-card-container {
+    padding: 0;
+  }
+
+  .keyInnovation-card-title {
+    font-size: 30px;
+  }
+
+  .keyInnovation-card-description {
+    font-size: 18px;
+  }
+
+  .btn {
+    min-width: unset;
+  }
+
+  .description {
+    max-width: unset;
+  }
+
+  .keyInnovation-header-container h3 {
+    font-size: 48px;
+  }
+}
