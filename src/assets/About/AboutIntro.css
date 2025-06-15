@@ -1,0 +1,64 @@
+.about-intro {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.1) 0%, rgba(234, 63, 50, 0.1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 19px,
+      rgba(255, 255, 255, 0.05) 20px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 19px,
+      rgba(255, 255, 255, 0.05) 20px
+    );
+  pointer-events: none;
+}
+
+.about-intro .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-intro h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.about-intro p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #cdcdcd;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    padding: 60px 20px;
+  }
+  
+  .about-intro h2 {
+    font-size: 2rem;
+  }
+  
+  .about-intro p {
+    font-size: 1rem;
+  }
+}
